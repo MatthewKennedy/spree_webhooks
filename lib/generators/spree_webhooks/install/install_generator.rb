@@ -1,6 +1,6 @@
 module SpreeWebhooks
   module Generators
-    class InstallGenerator < Rails::Generators::Base      
+    class InstallGenerator < Rails::Generators::Base
     end
   end
 end
