@@ -1,4 +1,4 @@
-require 'spree_webhooks/errors'
+require "spree_webhooks/errors"
 
 module Spree
   class Webhook
@@ -16,8 +16,8 @@ module Spree
     def self.find(id)
       id = id.to_sym # normalize incoming ids
 
-      handler = SpreeWebhooks::Config.find_webhook_handler(id) or
-        raise SpreeWebhooks::WebhookNotFound, "Cannot find a webhook handler for #{id.inspect}"
+      (handler = SpreeWebhooks::Config.find_webhook_handler(id)) ||
+        raise(SpreeWebhooks::WebhookNotFound, "Cannot find a webhook handler for #{id.inspect}")
 
       new(id: id, handler: handler)
     end

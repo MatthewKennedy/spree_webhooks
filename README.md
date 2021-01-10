@@ -1,4 +1,4 @@
-# SpreeWebhooks
+# spree_webhooks
 
 Adds webhooks to Spree
 
