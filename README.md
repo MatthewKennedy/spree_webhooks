@@ -1,4 +1,5 @@
 # spree_webhooks
+![CI](https://github.com/MatthewKennedy/spree_webhooks/workflows/CI/badge.svg)
 
 Adds webhooks to Spree
 
